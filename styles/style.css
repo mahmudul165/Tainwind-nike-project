@@ -1,0 +1,15 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* common style or utilities */
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.front-part {
+}
+.header-style {
+  background-color: #fff9f4;
+}
+.style-nike {
+  color: #fa804c;
+}

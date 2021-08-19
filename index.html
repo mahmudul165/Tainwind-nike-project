@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Leader Board</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- font awesome -->
+    <!-- css from tailwind -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/61a6132c09.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-style">
+      <!-- navber strat -->
+      <!-- This example requires Tailwind CSS v2.0+ -->
+      <nav class="md:container md:mx-auto fixed">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  p-2
+                  rounded-md
+                  text-gray-400
+                  hover:text-white hover:bg-gray-700
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-inset
+                  focus:ring-white
+                "
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!--
+            Icon when menu is closed.
+
+            Heroicon name: outline/menu
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                <!--
+            Icon when menu is open.
+
+            Heroicon name: outline/x
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="
+                flex-1 flex
+                items-center
+                justify-center
+                sm:items-stretch sm:justify-start
+              "
+            >
+              <div class="flex-shrink-0 flex items-center">
+                <img
+                  class="block h-8 w-auto"
+                  src="icons/Logo.png"
+                  alt="Workflow"
+                />
+              </div>
+            </div>
+            <div
+              class="
+                absolute
+                inset-y-0
+                right-0
+                flex
+                items-center
+                pr-2
+                sm:static sm:inset-auto sm:ml-6 sm:pr-0
+              "
+            >
+              <!-- start nav end part -->
+              <a
+                href="#"
+                class="
+                  group
+                  bg-yellow-500
+                  hover:bg-yellow-600
+                  text-white
+                  block
+                  px-3
+                  py-2
+                  rounded-md
+                  text-base
+                  font-medium
+                "
+                aria-current="page"
+                >Home</a
+              >
+
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium"
+                >Product</a
+              >
+
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium"
+                >About us</a
+              >
+
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium"
+                >Contract Us</a
+              >
+              <!-- end nav last part -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+            href="#"
+            class="
+              group
+              bg-yellow-500
+              hover:bg-yellow-600
+              text-white
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+            "
+            aria-current="page"
+            >Home</a
+          >
+
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            >Product</a
+          >
+
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            >About us</a
+          >
+
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            >Contract Us</a
+          >
+          </div>
+        </div>
+      </nav>
+      <!-- header fond part -->
+      <section class="md:container md:mx-auto   py-24 sm:pt-24 front-part mb-20">
+        <div class="  gap-2    md:flex items-center  justify-items-center">
+          <div class=" ">
+            <img class="lg:w-4/5" src="images/Group 33092.png" alt="">
+          </div>
+          <div class=" ">
+            <h1 class="text-4xl font-bold uppercase"><span class="style-nike flex flex-wrap py-3"> Nike React</span><span class="py-3 flex flex-nowrap">Infinity Run 2</span>  </h1>
+            <p class="py-8">Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry.</p>
+            <button class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500  rounded-t-lg px-8 py-4 inline-flex space-x-4 text-purple-900 flex-nowrap uppercase"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6   " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>Bye Now</button>
+          </div>
+        </section>
+    </header>
+    <!-- main section start -->
+    <main container>
+      <!-- CASUAL SHOES -->
+      <section class="md:container md:mx-auto">
+        <h2 class="font-extrabold pb-16">CASUAL SHOES</h2>
+        <section class="grid grid-cols-3 gap-8">
+          <div class=" rounded-lg bg-red-100 border-gray-100 p-8 ">
+            <div class="bg-white rounded-lg  p-2"><img width="300px" height="300px" class="rounded-3xl " src="images/image 5.png" alt="">            
+             
+            </div>
+            <div>
+              <h2 class="font-extrabold text-yellow-500 text-3xl">Nike Shoe</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, inventore!</p>
+            </div>
+            <div class="flex justify-between">
+              <h4 class="text-3xl text-purple-900">$500</h4>
+              <button class="bg-gradient-to-r from-green-400 to-blue-500 rounded-t-lg px-4 py-2  space-x-4 text-purple-900 flex-nowrap">Buy Now</button>
+            </div>
+          </div>
+          <div class=" rounded-lg bg-red-100 border-gray-100 p-8 ">
+            <div class="bg-white rounded-lg  p-2"><img width="300px" height="300px" class="rounded-3xl " src="images/pngegg 1.png" alt="">            
+             
+            </div>
+            <div>
+              <h2 class="font-extrabold text-yellow-500 text-3xl">Nike Shoe</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, inventore!</p>
+            </div>
+            <div class="flex justify-between">
+              <h4 class="text-3xl text-purple-900">$500</h4>
+              <button class="bg-gradient-to-r from-green-400 to-blue-500 rounded-t-lg px-4 py-2  space-x-4 text-purple-900 flex-nowrap">Buy Now</button>
+            </div>
+          </div>
+          <div class=" rounded-lg bg-red-100 border-gray-100 p-8 ">
+            <div class="bg-white rounded-lg  p-2"><img width="300px" height="300px" class="rounded-3xl " src="images/image 5.png" alt="">            
+             
+            </div>
+            <div>
+              <h2 class="font-extrabold text-yellow-500 text-3xl">Nike Shoe</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, inventore!</p>
+            </div>
+            <div class="flex justify-between">
+              <h4 class="text-3xl text-purple-900">$500</h4>
+              <button class="bg-gradient-to-r from-green-400 to-blue-500 rounded-t-lg px-4 py-2  space-x-4 text-purple-900 flex-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--Formal shoes -->
+      <section class="md:container md:mx-auto">
+        <h2 class="font-extrabold py-20 uppercase">Formal shoes</h2>
+        <section class="grid grid-cols-3 gap-8">
+          <div class=" rounded-lg bg-red-100 border-gray-100 p-8 ">
+            <div class="bg-white rounded-lg  p-2"><img width="300px" height="300px" class="rounded-3xl " src="images/Rectangle 38.png" alt="">            
+             
+            </div>
+            <div>
+              <h2 class="font-extrabold text-yellow-500 text-3xl">Nike Shoe</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, inventore!</p>
+            </div>
+            <div class="flex justify-between">
+              <h4 class="text-3xl text-purple-900">$500</h4>
+              <button class="bg-gradient-to-r from-green-400 to-blue-500 rounded-t-lg px-4 py-2  space-x-4 text-purple-900 flex-nowrap">Buy Now</button>
+            </div>
+          </div>
+          <div class=" rounded-lg bg-red-100 border-gray-100 p-8 ">
+            <div class="bg-white rounded-lg  p-2"><img width="300px" height="300px" class="rounded-3xl " src="images/Rectangle 39.png" alt="">            
+             
+            </div>
+            <div>
+              <h2 class="font-extrabold text-yellow-500 text-3xl">Nike Shoe</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, inventore!</p>
+            </div>
+            <div class="flex justify-between">
+              <h4 class="text-3xl text-purple-900">$500</h4>
+              <button class="bg-gradient-to-r from-green-400 to-blue-500 rounded-t-lg px-4 py-2  space-x-4 text-purple-900 flex-nowrap">Buy Now</button>
+            </div>
+          </div>
+          <div class=" rounded-lg bg-red-100 border-gray-100 p-8 ">
+            <div class="bg-white rounded-lg  p-2"><img width="300px" height="300px" class="rounded-3xl " src="images/Mask Group.png" alt="">            
+             
+            </div>
+            <div>
+              <h2 class="font-extrabold text-yellow-500 text-3xl">Nike Shoe</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, inventore!</p>
+            </div>
+            <div class="flex justify-between">
+              <h4 class="text-3xl text-purple-900">$500</h4>
+              <button class="bg-gradient-to-r from-green-400 to-blue-500 rounded-t-lg px-4 py-2  space-x-4 text-purple-900 flex-nowrap">Buy Now</button>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- last section -->
+      <section>
+        <section class="md:container md:mx-auto grid grid-cols-2 gap-4 justify-center align-center py-20">
+          <div class="grid gap-8">
+            <div class="flex items-center gap-4 rounded-3xl bg-yellow-100">
+              <div><img width="78px" height="82px" src="icons/image 12.png" alt=""></div>
+              <div class="gap-3"><h4 class="font-bold">Lorem ipsum dolor sit amet.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, accusamus.</p></div>
+            </div>
+            <div class="flex items-center gap-4 rounded-3xl bg-yellow-100">
+              <div><img width="78px" height="82px" src="icons/image 12.png" alt=""></div>
+              <div class="gap-3"><h4 class="font-bold">Lorem ipsum dolor sit amet.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, accusamus.</p></div>
+            </div>  
+            <div class="flex items-center gap-4 rounded-3xl bg-yellow-100">
+              <div><img width="78px" height="82px" src="icons/image 12.png" alt=""></div>
+              <div class="gap-3"><h4 class="font-bold">Lorem ipsum dolor sit amet.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, accusamus.</p></div>
+            </div>           
+          </div>
+          <div class="shopping-img">
+            <img src="icons/XMLID 1.png" alt="">
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
